@@ -14,16 +14,17 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/yu/yureka2/full_yureka2.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit from Yureka 2 device
+$(call inherit-product, device/yu/yureka2/device.mk)
 
-PRODUCT_NAME := lineage_yureka2
-BOARD_VENDOR := YU
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="cmcc/wt89536/wt89536:6.0.1/MMB29M/20170901:user/release-keys" \
-    PRIVATE_BUILD_DESC="wt89536-user 6.0.1 MMB29M 20170901 release-keys"
-
-PRODUCT_GMS_CLIENTID_BASE := android-yureka2
+# Device identifier. This must come after all inclusions
+TARGET_VENDOR := YU
+PRODUCT_DEVICE := yureka2
+PRODUCT_NAME := full_yureka2
+PRODUCT_BRAND := YU
+PRODUCT_MODEL := YU5551
+PRODUCT_MANUFACTURER := YU

@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/cmcc/wt89536
+LOCAL_PATH := device/yu/yureka2
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -48,7 +48,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_SOURCE := kernel/cmcc/msm8953
+TARGET_KERNEL_SOURCE := kernel/yu/msm8953
 TARGET_KERNEL_CONFIG := lineageos_wt89536_defconfig
 #TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 
@@ -134,9 +134,9 @@ USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_wt89536
+TARGET_INIT_VENDOR_LIB := libinit_yureka2
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_wt89536
+TARGET_RECOVERY_DEVICE_MODULES := libinit_yureka2
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -210,4 +210,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/cmcc/wt89536/BoardConfigVendor.mk
+-include vendor/yu/yureka2/BoardConfigVendor.mk
