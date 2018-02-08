@@ -22,6 +22,9 @@ vendor/lib/rfsa/adsp/libscveCleverCapture_skel.so|849fdadd2b50ac8be2b26d27cc5c8b
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|944169db3ac67056b92ef4f850f69346958370b5
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
 vendor/lib/rfsa/adsp/libscveTextReco_skel.so|47ab455c11a7e8391ad768a9e21c9c60ab0d421b
+vendor/lib/rfsa/adsp/libdirac-capiv2.so
+vendor/lib/rfsa/adsp/tas2560_aac.bin
+vendor/lib/rfsa/adsp/tas2560_ssi.bin
 
 # Bluetooth - from oxygen (MiMax 2)
 bin/btnvtool|a10f51f756d661342b29c70bd9da8c79bfb4c8b1
@@ -31,37 +34,22 @@ vendor/lib/libbtnv.so|026c66a94493fc784503784963fa1f2c8807802d
 vendor/lib64/libbtnv.so|d10d3351bfd946b1276b9735e569c6f1a795401d
 
 # Bluetooth firmware - from oxygen (MiMax 2)
-etc/firmware/nvm_tlv.bin|78d937d7939300be7a23d9281cf082827697d4c2
-etc/firmware/nvm_tlv_1.3.bin|a5856eaf0ef9537772f1f07a287d4bc666483728
-etc/firmware/nvm_tlv_2.1.bin|c4dddea2ae08f625feb0fc5c75137dec0a58e46d
-etc/firmware/nvm_tlv_3.0.bin|d527cfa764514c60588753c3f637a266d96a4f8c
-etc/firmware/nvm_tlv_3.2.bin|fb0c1c079d019957fe4ac07f52cd8e5e9c02b030
-etc/firmware/rampatch_tlv.img|0503c6452f9eb843c751d107feed370de8a75f71
-etc/firmware/rampatch_tlv_1.3.tlv|1da2a06f5dc5d8d2489c35a695a6c3db6575110b
-etc/firmware/rampatch_tlv_2.1.tlv|3f7e5271b40e581af603bb1093ccb2b058c83e82
-etc/firmware/rampatch_tlv_3.0.tlv|5f8120ea99ec8462f5ee21a29e0b290a031524c0
-etc/firmware/rampatch_tlv_3.2.tlv|1c934123b0571803cb3404a0d884fdf97241d0cb
+#etc/firmware/nvm_tlv.bin|78d937d7939300be7a23d9281cf082827697d4c2
+#etc/firmware/nvm_tlv_1.3.bin|a5856eaf0ef9537772f1f07a287d4bc666483728
+#etc/firmware/nvm_tlv_2.1.bin|c4dddea2ae08f625feb0fc5c75137dec0a58e46d
+#etc/firmware/nvm_tlv_3.0.bin|d527cfa764514c60588753c3f637a266d96a4f8c
+#etc/firmware/nvm_tlv_3.2.bin|fb0c1c079d019957fe4ac07f52cd8e5e9c02b030
+#etc/firmware/rampatch_tlv.img|0503c6452f9eb843c751d107feed370de8a75f71
+#etc/firmware/rampatch_tlv_1.3.tlv|1da2a06f5dc5d8d2489c35a695a6c3db6575110b
+#etc/firmware/rampatch_tlv_2.1.tlv|3f7e5271b40e581af603bb1093ccb2b058c83e82
+#etc/firmware/rampatch_tlv_3.0.tlv|5f8120ea99ec8462f5ee21a29e0b290a031524c0
+#etc/firmware/rampatch_tlv_3.2.tlv|1c934123b0571803cb3404a0d884fdf97241d0cb
 
 # CNE - from oxygen (MiMax 2)
 -priv-app/CNEService/CNEService.apk|0f88162ac39770b5e740e6e8192676e66fdfa0d2
 bin/cnd|38538ec894c0d4e3dcb9f950ba4870acb299dcc7
 etc/cne/SwimConfig.xml|68dedcca1c2ac18cf81fdee1854de16a3a60dd02
 etc/cne/andsfCne.xml|f81a69eac5dd16bbb195a0fcf1211a51cc014553
-etc/cne/wqeclient/ATT/ATT_profile1.xml|c3072f14098d64c2e799423c046d71691b10af7a
-etc/cne/wqeclient/ATT/ATT_profile2.xml|03cfe4bece8231732411a48dfe80775745ddf216
-etc/cne/wqeclient/ATT/ATT_profile3.xml|278bb7464a9b7d90b9b07cbb99cbc88fce565f06
-etc/cne/wqeclient/ATT/ATT_profile4.xml|b39f12bf673db12f37b0f9b4f8a5384fcccbc92e
-etc/cne/wqeclient/ROW/ROW_profile1.xml|e92c4e8205ea97358a689c4846e9610a7b29d4d7
-etc/cne/wqeclient/ROW/ROW_profile2.xml|b5909abc79b538f6bb6fd557bf56aea368c533e0
-etc/cne/wqeclient/ROW/ROW_profile3.xml|01ef601c699dec8cd8f378de2ef213fb70f694cb
-etc/cne/wqeclient/ROW/ROW_profile4.xml|278bb7464a9b7d90b9b07cbb99cbc88fce565f06
-etc/cne/wqeclient/ROW/ROW_profile5.xml|d578513bd3116e589855cb6394041899eb8c0c47
-etc/cne/wqeclient/VZW/VZW_profile1.xml|c3072f14098d64c2e799423c046d71691b10af7a
-etc/cne/wqeclient/VZW/VZW_profile2.xml|35cd86254810c553631cd466faa53c88a35e663a
-etc/cne/wqeclient/VZW/VZW_profile3.xml|7f23ce13f9f2d5bd4505dca884618c50743fe05f
-etc/cne/wqeclient/VZW/VZW_profile4.xml|48ebd31efa0dbec1cc7fa97c2450cff4b0a89888
-etc/cne/wqeclient/VZW/VZW_profile5.xml|b83211b5285e929a193414da625af7fa26d96d5b
-etc/cne/wqeclient/VZW/VZW_profile6.xml|07acc779e901b0ffd7df97c42996ff68dccabddf
 etc/permissions/ConnectivityExt.xml|da7fd0d0da06933b19b657addd14e6858b73e13c
 etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
 etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904

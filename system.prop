@@ -211,6 +211,7 @@ ro.sys.fw.trim_enable_memory=2147483648
 
 # WIFI
 wifi.interface=wlan0
-
+# NFC
+persist.nfc.smartcard.config=SIM1,SIM2,eSE1
 # OTA
 cm.updater.uri=http://lineage.karevn.com/api
