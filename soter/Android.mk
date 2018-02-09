@@ -1,4 +1,5 @@
-# Copyright (C) 2017 The LineageOS Project
+#
+# Copyright (C) 2017 The MoKee Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,16 +14,17 @@
 # limitations under the License.
 #
 
-LOCAL_PATH:= $(call my-dir)
+LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
+LOCAL_MODULE := soter
 LOCAL_MODULE_TAGS := optional
-LOCAL_C_INCLUDES := \
-    system/core/base/include \
-system/core/init
-LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
-LOCAL_SRC_FILES := init_wt89536.cpp
-LOCAL_MODULE := libinit_wt89536
 
-include $(BUILD_STATIC_LIBRARY)
+LOCAL_SRC_FILES := \
+    $(call all-java-files-under, java) \
+    ../../../../frameworks/base/keystore/java/android/security/keystore/KeyProperties.java
+
+LOCAL_JAVA_LIBRARIES := bouncycastle okhttp
+
+include $(BUILD_JAVA_LIBRARY)

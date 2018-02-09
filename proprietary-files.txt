@@ -562,3 +562,10 @@ bin/dun-server
 bin/garden_app
 bin/qmuxd
 
+# IFAA(from cheeseburger)
+bin/ifaadaemon
+lib/libteeclientjni.so
+lib64/libteeclientjni.so
+lib64/libteeclientjniv2.so
+-priv-app/IFAAService/IFAAService.apk
+

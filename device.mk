@@ -179,7 +179,12 @@ PRODUCT_PACKAGES += \
 # Fs_config
 PRODUCT_PACKAGES += \
     fs_config_files
+# IFAA (Fingerprint support for Alipay)
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
 
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8953 \
@@ -329,6 +334,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
 
+# SOTER (Fingerprint support for WeChat Payment)
+PRODUCT_PACKAGES += \
+    soter
+
+PRODUCT_BOOT_JARS += \
+    soter
 # WiFi
 PRODUCT_PACKAGES += \
     dhcpcd.conf \

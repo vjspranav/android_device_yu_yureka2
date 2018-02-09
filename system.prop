@@ -151,7 +151,7 @@ service.qti.ims.enabled=1
 persist.radio.NO_STAPA=1
 persist.radio.VT_HYBRID_ENABLE=1
 telephony.lteOnCdmaDevice=1
-#ro.telephony.ril_class=Wt89536RIL
+ro.telephony.ril_class=Wt89536RIL
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
