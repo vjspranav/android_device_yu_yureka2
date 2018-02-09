@@ -23,17 +23,17 @@ import android.os.Parcel;
 import static com.android.internal.telephony.RILConstants.*;
 
 /**
- * Custom Qualcomm RIL for Xiaomi Redmi 4 Prime
+ * Custom Qualcomm RIL for CMDC M836
  *
  * {@hide}
  */
-public class MarkwRIL extends RIL implements CommandsInterface {
+public class Wt89536RIL extends RIL implements CommandsInterface {
 
-    public MarkwRIL(Context context, int preferredNetworkType, int cdmaSubscription) {
+    public Wt89536RIL(Context context, int preferredNetworkType, int cdmaSubscription) {
         this(context, preferredNetworkType, cdmaSubscription, null);
     }
 
-    public MarkwRIL(Context context, int preferredNetworkType,
+    public Wt89536RIL(Context context, int preferredNetworkType,
             int cdmaSubscription, Integer instanceId) {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
     }

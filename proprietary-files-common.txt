@@ -253,6 +253,12 @@ etc/firmware/a506_zap.mdt|785f1011df8a15ecd96d4a0358f9e7cb331ef0c9
 etc/firmware/a506_zap.elf|7562b178b884983ebe1bdd307fbc8e61d8449811
 etc/firmware/a530_pfp.fw|448f9db8271fefb08348cbc50409e8e95bd93f78
 etc/firmware/a530_pm4.fw|5741a28752355b478d455635bab008028ff7e1c6
+etc/firmware/a530_gpmu.fw2
+etc/firmware/a530v1_pfp.fw
+etc/firmware/a530v1_pm4.fw
+etc/firmware/a530v2_seq.fw2
+etc/firmware/a530v3_gpmu.fw2
+etc/firmware/a530v3_seq.fw2
 
 # Ipacm - from oxygen (MiMax 2)
 bin/ipacm-diag|88e7bdd59296b075b563b3dd7657aa8e6786fb6e

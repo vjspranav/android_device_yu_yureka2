@@ -23,6 +23,7 @@ vendor/lib/libsurround_3mic_proc.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
+lib/soundfx/libdirac.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbmapper.so
@@ -406,9 +407,9 @@ etc/firmware/DE.o.msm8953
 vendor/firmware/libpn548ad_fw.so
 
 # NFC-SIM
-#-framework/org.simalliance.openmobileapi.jar
-#etc/permissions/org.simalliance.openmobileapi.xml
-#-vendor/app/SmartcardService/SmartcardService.apk
+-framework/org.simalliance.openmobileapi.jar
+etc/permissions/org.simalliance.openmobileapi.xml
+-vendor/app/SmartcardService/SmartcardService.apk
 # Sensors
 bin/sensors.qcom
 vendor/lib/hw/activity_recognition.msm8953.so
@@ -430,7 +431,9 @@ vendor/lib64/libthermalioctl.so
 
 
 # Touchscreen
-etc/ft5346_oufei.ini
+#etc/ft5346_oufei.ini
+etc/ft5346_biel_1080p.ini
+etc/ft5346_oufei_1080p.ini
 # USB
 etc/firmware/ice40.bin
 # frome logcat
@@ -550,11 +553,12 @@ vendor/lib64/libqti_performance.so
 vendor/lib64/libqti-at.so
 vendor/lib64/libqti-gt.so
 
-vendor/media/LMspeed_508.emd
-vendor/media/PFFprec_600.emd
+etc/permissions/com.qti.snapdragon.sdk.display.xml
+etc/permissions/qti-vzw-ims-internal.xml
 vendor/framework/qti-vzw-ims-internal.jar
 
 bin/cnss-daemon
 bin/dun-server
 bin/garden_app
 bin/qmuxd
+
