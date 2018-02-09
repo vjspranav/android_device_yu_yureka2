@@ -148,7 +148,8 @@ persist.dbg.wfc_avail_ovr=0
 persist.radio.sw_mbn_update=0
 persist.radio.hw_mbn_update=0
 service.qti.ims.enabled=1
-
+persist.radio.NO_STAPA=1
+persist.radio.VT_HYBRID_ENABLE=1
 telephony.lteOnCdmaDevice=1
 #ro.telephony.ril_class=Wt89536RIL
 

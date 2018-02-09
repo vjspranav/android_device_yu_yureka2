@@ -1,29 +1,42 @@
-Copyright 2017 - The Mokee Opensource Project
+# Device Tree for cmcc M836 (wt89536)
 
-Device configuration for Xiaomi Redmi 4 (_markw_)
-=====================================================
+***
+### 测试版非日用
+***
+### sim相关
+* 电信卡测试：qcrilmsgtunnel fc，重启不能打开数据需要更改一下首选网络类型
+* 电信+移动或者移动：移动联通做主卡，电信无信号，原声通病，怎么解决可以百度
+* 添加volte开关
+***
+### 拍照 录像
+* 拍照正常
+* 1080p及以下录像正常，低光处可能有色块，4k闪退，第三方相机录像可用
+***
+### WIFI 蓝牙 热点 NFC
+* WiFi 蓝牙 热点正常
+* NFC可用
+***
+### 声音 显示 指纹 按键 等
+* 声音正常
+* 显示 指纹正常
+* 按键灯正常
+* 没有快速充电
+***
 
-Basic   | Spec Sheet
--------:|:-------------------------
-CPU     | Octa-core 2.0 GHz Cortex-A53
-CHIPSET | Qualcomm MSM8953 Snapdragon 625
-GPU     | Adreno 506
-Memory  | 3 GB
-Shipped Android Version | Android 6.0.1 with MIUI 8
-Storage | 32 GB (Samsung RX1BMB)
-MicroSD | Up to 256 GB (Hybrid)
-Battery | 4100 mAh (non-removable) (Coslight/Feimaotui)
-Dimensions | 141.3 x 69.6 x 8.9 mm
-Display | 1080 x 1920 pixels, 5.0" IPS (Tianma r63350/EBBG nt35521s/EBBG nt35596)
-Touchscreen | FOCALTECH FT5346 (for Tianma)/ATMEL A308U (for EBBG)
-Rear Camera  | 13.0 MP, Dual LED flash (Samsung S5K3L8/OmniVision OV13853)
-Front Camera | 5.0 MP (OmniVision OV5670)
-FingerPrint | Yes (FPC 1020/Goodix GF3208)
-Accelerometer | Yes (Bosch BMI160)
-Magnetometer | Yes (Yamaha YAS537)
-Als/ps | Yes (Liteon LTR55X)
-LED | Yes (Awinic AW2013)
-Release Date | November 2016
 
-![Xiaomi Redmi 4 Prime](http://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-4-prime-2.jpg "Xiaomi Redmi 4 Prime")
+| Feature                 | Specification                     |
+| :---------------------- | :-------------------------------- |
+| CPU                     | Octa-core 2.0 GHz Cortex-A53      |
+| Chipset                 | Qualcomm MSM8953 Snapdragon 625   |
+| GPU                     | Adreno 506                        |
+| Memory                  | 3 GB                              |
+| Shipped Android Version | 6.0.1                             |
+| Storage                 | 32 GB                             |
+| MicroSD                 | Up to 256 GB                      |
+| Battery                 | 4100 mAh (non-removable)          |
+| Dimensions              | 151 x 76 x 8.5 mm                 |
+| Display                 | 1920x1080 pixels, 5.5 (~401 PPI)  |
+| Rear Camera             | 13 MP, LED flash                  |
+| Front Camera            | 5 MP                              |
+| Release Date            | January 2017                      |
 
