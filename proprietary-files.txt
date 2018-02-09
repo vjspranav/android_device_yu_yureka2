@@ -387,7 +387,7 @@ lib/libcom_fingerprints_service.so
 lib64/hw/fingerprint.default.so
 lib64/hw/fingerprint.goodix.so
 lib64/hw/gxfingerprint.default.so
-lib64/hw/fingerprint.msm8953.so
+
 lib/hw/fingerprint.default.so
 lib64/libcom_fingerprints_service.so
 lib64/libfp_client.so
