@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR := cmdc
+BOARD_VENDOR := yu
 
-LOCAL_PATH := device/cmdc/wt89536
+LOCAL_PATH := device/yu/yureka2
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -59,8 +59,8 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_SOURCE := kernel/cmdc/msm8953
-TARGET_KERNEL_CONFIG := lineageos_wt89536_defconfig
+TARGET_KERNEL_SOURCE := kernel/yu/msm8953
+TARGET_KERNEL_CONFIG := lineageos_yureka2_defconfig
 
 USE_CLANG_PLATFORM_BUILD := true
 
@@ -128,7 +128,7 @@ TARGET_TS_MAKEUP := true
 #TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 # for kernel headers
-BOARD_GLOBAL_CFLAGS += -DCONFIG_MACH_CMDC_WT89536
+BOARD_GLOBAL_CFLAGS += -DCONFIG_MACH_CMDC_YUREKA2
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -177,9 +177,9 @@ USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_wt89536
+TARGET_INIT_VENDOR_LIB := libinit_yureka2
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_wt89536
+TARGET_RECOVERY_DEVICE_MODULES := libinit_yureka2
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -256,4 +256,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 
 # Inherit from the proprietary version
--include vendor/cmdc/wt89536/BoardConfigVendor.mk
+-include vendor/yu/yureka2/BoardConfigVendor.mk

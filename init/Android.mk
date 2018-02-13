@@ -1,3 +1,4 @@
+
 # Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,7 +23,7 @@ LOCAL_C_INCLUDES := \
     system/core/base/include \
 system/core/init
 LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
-LOCAL_SRC_FILES := init_wt89536.cpp
-LOCAL_MODULE := libinit_wt89536
+LOCAL_SRC_FILES := init_yureka2.cpp
+LOCAL_MODULE := libinit_yureka2
 
 include $(BUILD_STATIC_LIBRARY)

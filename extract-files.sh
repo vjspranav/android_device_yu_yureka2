@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=wt89536
-VENDOR=cmdc
+DEVICE=yu
+VENDOR=yureka2
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

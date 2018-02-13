@@ -18,23 +18,23 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from wt89536 device
-$(call inherit-product, device/cmdc/wt89536/device.mk)
+# Inherit from yureka2 device
+$(call inherit-product, device/yu/yureka2/device.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_wt89536
-PRODUCT_DEVICE := wt89536
-PRODUCT_BRAND := CMCC
-PRODUCT_MODEL := M836
-PRODUCT_MANUFACTURER := CMCC
+PRODUCT_NAME := lineage_yureka2
+PRODUCT_DEVICE := yureka2
+PRODUCT_BRAND := YU
+PRODUCT_MODEL := Yureka 2
+PRODUCT_MANUFACTURER := YU
 
-PRODUCT_GMS_CLIENTID_BASE := android-cmcc
+PRODUCT_GMS_CLIENTID_BASE := android-yureka2
 
-TARGET_VENDOR := CMCC
+TARGET_VENDOR := yureka2
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="cmcc/wt89536/wt89536:7.1.2/NJH47F/20180208:user/release-keys" \
-    PRIVATE_BUILD_DESC="wt89536-user 7.1.2 NJH47F 20180208 release-keys"
+    PRIVATE_BUILD_DESC="yureka2-user 7.1.2 NJH47F 20180208 release-keys"
