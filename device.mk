@@ -179,12 +179,6 @@ PRODUCT_PACKAGES += \
 # Fs_config
 PRODUCT_PACKAGES += \
     fs_config_files
-# IFAA (Fingerprint support for Alipay)
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8953 \
@@ -298,7 +292,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.qcom.factory.rc \
+    init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
