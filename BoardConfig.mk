@@ -120,15 +120,13 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_READ_ADDR_FROM_PROP := true
 
 # Camera
+USE_DEVICE_SPECIFIC_CAMERA := true
 # Force camera module to be compiled only in 32-bit mode on 64-bit systems
 # Once camera module can run in the native mode of the system (either
 # 32-bit or 64-bit), the following line should be deleted
 BOARD_QTI_CAMERA_32BIT_ONLY := true
-TARGET_TS_MAKEUP := true
-#TARGET_HAS_LEGACY_CAMERA_HAL1 := true
-USE_DEVICE_SPECIFIC_CAMERA := true
-# for kernel headers
-BOARD_GLOBAL_CFLAGS += -DCONFIG_MACH_CMDC_WT89536
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
