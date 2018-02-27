@@ -48,9 +48,6 @@
 /dev/rmnet_ctrl           0660   usb        usb
 /dev/dpl_ctrl             0660   usb        usb
 
-#add by gbdb
-/dev/i2c-8              0660   media      media
-#add end
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
 
@@ -269,9 +266,6 @@
 /dev/block/platform/soc/7464900.sdhci/by-name/frp       0600   system     system
 
 
-#add by gbdb
-/dev/i2c-8                0660   media      media
-#add end
 
 # fpc Fingerprint
 /sys/devices/soc/soc:fpc1020        hw_reset            0220   system     system

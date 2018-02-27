@@ -24,7 +24,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 DISABLE_DEXPREOPT := true
 
 # Block based ota
-BLOCK_BASED_OTA := false
+BLOCK_BASED_OTA := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -138,6 +138,7 @@ BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
     hardware/cyanogen/cmhw \
     $(LOCAL_PATH)/cmhw
+TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
 
 # CNE / DPM
 BOARD_USES_QCNE := true
