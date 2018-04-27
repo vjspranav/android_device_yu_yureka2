@@ -22,10 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/yu/yureka2/device.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_yureka2
+PRODUCT_NAME := bliss_yureka2
 PRODUCT_DEVICE := yureka2
 PRODUCT_BRAND := YU
 PRODUCT_MODEL := Yureka 2
