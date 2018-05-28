@@ -26,6 +26,11 @@ voice.playback.conc.disabled=true
 voice.record.conc.disabled=false
 voice.voip.conc.disabled=true
 
+# Fast charing
+persist.usb.hvdcp.detect=true
+
+
+
 # Audio offload
 audio.offload.buffer.size.kb=64
 audio.offload.gapless.enabled=true
