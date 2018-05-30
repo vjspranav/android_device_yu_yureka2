@@ -16,7 +16,7 @@
 
 BOARD_VENDOR := yu
 
-LOCAL_PATH := device/yu/yureka2
+LOCAL_PATH := device/yu/taco
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -60,7 +60,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/yu/msm8953
-TARGET_KERNEL_CONFIG := lineageos_yureka2_defconfig
+TARGET_KERNEL_CONFIG := lineageos_taco_defconfig
 
 USE_CLANG_PLATFORM_BUILD := true
 
@@ -176,9 +176,9 @@ USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_wt89536
+TARGET_INIT_VENDOR_LIB := libinit_taco
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_wt89536
+TARGET_RECOVERY_DEVICE_MODULES := libinit_taco
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -218,8 +218,8 @@ TARGET_USE_SDCLANG := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_FSTAB := $((LOCAL_PATH)/rootdir/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
+#TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
+#TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
@@ -255,4 +255,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 
 # Inherit from the proprietary version
--include vendor/yu/yureka2/BoardConfigVendor.mk
+-include vendor/yu/taco/BoardConfigVendor.mk
