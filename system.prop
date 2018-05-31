@@ -192,3 +192,11 @@ wifi.interface=wlan0
 # NFC
 persist.nfc.smartcard.config=SIM1,SIM2,eSE1
 
+#RIL
+ro.kernel.android.checkjni=1
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.image-dex2oat-filter=verify-at-runtime
+dalvik.vm.dex2oat-filter=verify-at-runtime
+dalvik.vm.usejit=true
+audio_hal.period_size=192
+af.fast_track_multiplier=1

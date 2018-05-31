@@ -1,4 +1,4 @@
-# Device Tree for cmcc M836 (wt89536) 移动N2
+# Device Tree for YU Yureka 2 (wt89536) 移动N2
 
 ***
 ### 测试版非日用
@@ -23,7 +23,7 @@
 | CPU                     | Octa-core 2.0 GHz Cortex-A53      |
 | Chipset                 | Qualcomm MSM8953 Snapdragon 625   |
 | GPU                     | Adreno 506                        |
-| Memory                  | 3 GB                              |
+| Memory                  | 4 GB                              |
 | Shipped Android Version | 6.0.1                             |
 | Storage                 | 32 GB                             |
 | MicroSD                 | Up to 256 GB                      |
